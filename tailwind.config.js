@@ -24,6 +24,14 @@ module.exports = {
         },
       },
       keyframes: {
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        pulseSlow: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        },
         flipX: {
           '0%, 100%': { transform: 'scaleX(1)' },
           '50%': { transform: 'scaleX(-1)' },
@@ -35,6 +43,8 @@ module.exports = {
         
       },
       animation: {
+        fadeInUp: 'fadeInUp 1s ease-out forwards',
+        pulseSlow: 'pulseSlow 2s infinite',
         flipX: 'flipX 8s infinite ease-in-out',
         flipY: 'flipY 8s infinite ease-in-out',
       },

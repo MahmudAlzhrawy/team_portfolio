@@ -1,21 +1,89 @@
-export default function Navbar(){
-    return(
-        <div className="nav h-14 bg-cream">
-            <div className="content px-4 h-full items-center flex justify-between ">
-            <div className="logo text-[#654321] text-3xl">
-                    <span className="font-serif text-4xl text-[#7B5E57] inline-block animate-flipY">C</span>
-                    ode
-                    <span className="font-serif text-4xl text-[#7B5E57] inline-block animate-flipX">V</span>
-                    erse
-                    </div>
-                    <div className="linkes ">
-                        <ul className=" flex justify-between">
-                            <a href=""><li className="pr-8 text-xl text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-500">About</li></a>
-                            <a href=""><li className="pr-8 text-xl text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-500">Service</li></a>
-                            <a href=""><li className="pr-8 text-xl text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-500">Contact</li></a>
-                        </ul>
-                </div>
+    "use client";
+
+    import { useState } from "react";
+
+    export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+        <div className="nav h-16 bg-cream/70 shadow-md fixed top-0 left-0 right-0 z-50">
+        <div className="content px-4 h-full flex items-center justify-between">
+
+            {/* Logo */}
+            <div className="logo text-[#654321] text-2xl md:text-3xl font-alexandria">
+            <span className="font-serif text-4xl text-[#7B5E57] inline-block animate-flipY">C</span>
+            ode
+            <span className="font-serif text-4xl text-[#7B5E57] inline-block animate-flipX">V</span>
+            erse
+            </div>
+
+            {/* Desktop Links */}
+            <div className="hidden md:flex linkes">
+            <ul className="flex space-x-8">
+                <li>
+                <a href="/about" className="text-xl text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-500">
+                    About
+                </a>
+                </li>
+                <li>
+                <a href="/services" className="text-xl text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-500">
+                    Services
+                </a>
+                </li>
+                <li>
+                <a href="/contact" className="text-xl text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-500">
+                    Contact
+                </a>
+                </li>
+            </ul>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden flex items-center">
+            <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-[#7B5E57] focus:outline-none"
+            >
+                {/* Hamburger Icon */}
+                <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                >
+                {isOpen ? (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+                </svg>
+            </button>
             </div>
         </div>
-    )
-}
+
+        {/* Mobile Menu Links */}
+        {isOpen && (
+            <div className="md:hidden bg-cream/90 backdrop-blur-md">
+            <ul className="flex flex-col items-center py-4 space-y-4">
+                <li>
+                <a href="/about" className="text-lg text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-300">
+                    About
+                </a>
+                </li>
+                <li>
+                <a href="/services" className="text-lg text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-300">
+                    Services
+                </a>
+                </li>
+                <li>
+                <a href="/contact" className="text-lg text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-300">
+                    Contact
+                </a>
+                </li>
+            </ul>
+            </div>
+        )}
+        </div>
+    );
+    }
