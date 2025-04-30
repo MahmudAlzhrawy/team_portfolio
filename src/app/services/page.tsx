@@ -51,7 +51,7 @@ export default function ServicesPage() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.1, delay: index * 0.1 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(255, 200, 0, 0.4)' }}
             className="bg-[#1a1a1a] p-8 rounded-2xl shadow-md hover:shadow-lg transition"
           >
