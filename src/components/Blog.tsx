@@ -29,7 +29,7 @@ useEffect(() => {
         console.log("Error fetching data");
         }
     } catch (e) {
-        console.error("Failed to fetch blog data");
+        console.error("Failed to fetch blog data",e);
     } finally {
         setLoading(false); 
     }

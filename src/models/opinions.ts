@@ -1,4 +1,4 @@
-import mongoose, { Schema, models, model } from "mongoose";
+import  { Schema, models, model } from "mongoose";
 
 const opinionSchema = new Schema({
   userName: { type: String, required: true },
