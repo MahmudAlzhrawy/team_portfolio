@@ -35,16 +35,21 @@
                     Contact
                 </a>
                 </li>
+                <li>
+                <a href="/opinions" className="text-xl text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-500">
+                    Opinions
+                </a>
+                </li>
             </ul>
             </div>
 
-            {/* Mobile Menu Button */}
+            
             <div className="md:hidden flex items-center">
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="text-[#7B5E57] focus:outline-none"
             >
-                {/* Hamburger Icon */}
+                
                 <svg
                 className="w-8 h-8"
                 fill="none"
@@ -62,7 +67,7 @@
             </div>
         </div>
 
-        {/* Mobile Menu Links */}
+        
         {isOpen && (
             <div className="md:hidden bg-cream/90 backdrop-blur-md">
             <ul className="flex flex-col items-center py-4 space-y-4">
@@ -79,6 +84,11 @@
                 <li>
                 <a href="/contact" className="text-lg text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-300">
                     Contact
+                </a>
+                </li>
+                <li>
+                <a href="/opinions" className="text-xl text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-500">
+                    Opinions
                 </a>
                 </li>
             </ul>
