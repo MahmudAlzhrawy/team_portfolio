@@ -1,7 +1,8 @@
 "use client";
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import { motion } from 'framer-motion';
+import Loading from '../loading';
 
 const services = [
   {
@@ -28,6 +29,7 @@ const services = [
 
 export default function ServicesPage() {
   return (
+    <Suspense fallback={<Loading/>}>
     <div className="min-h-screen bg-cream/70 py-24">
       <div className="container w-[90%] mx-auto text-center">
 
@@ -65,5 +67,6 @@ export default function ServicesPage() {
 
       </div>
     </div>
+    </Suspense>
   );
 }
