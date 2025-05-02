@@ -1,8 +1,8 @@
 "use client";
 
-import ProjectCard from "@/components/ProjectCard"//ProjectCard"; // adjust path if needed
+import ProjectCard from "@/components/ProjectCard"
 import { Suspense } from "react";
-import Loading from "../loading"; // keep your loading component
+import Loading from "../loading";
 
 const projects = [
   {

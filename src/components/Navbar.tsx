@@ -84,7 +84,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   className="text-lg text-[#7B5E57] hover:text-[#4E2C20] font-serif duration-300"
-                  onClick={() => setIsOpen(false)} // يغلق المينيو بعد الضغط
+                  onClick={() => setIsOpen(false)}
                 >
                   {link.label}
                 </Link>
