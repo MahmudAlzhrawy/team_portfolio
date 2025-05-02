@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Alexandria } from "next/font/google";
+import { Geist, Geist_Mono, Alexandria } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navabar";
+
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
 const alexandria = Alexandria({
   subsets: ["arabic", "latin"],
   weight: ["400", "600", "700"],
   display: "swap",
-  variable: "--font-alexandria"
+  variable: "--font-alexandria",
 });
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,12 +34,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${alexandria.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${alexandria.variable} ${geistMono.variable}`}
+      >
         <div>
-        <div>
-          <Navbar/>
+          <div>
+            <Navbar />
+          </div>
+          {children}
         </div>
-        {children}
+        <div>
+          <Footer />
         </div>
       </body>
     </html>
