@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ToastContainer } from "react-toastify";
 
 const alexandria = Alexandria({
   subsets: ["arabic", "latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({
           </div>
           {children}
         </div>
+        <ToastContainer />
         <div>
           <Footer />
         </div>
