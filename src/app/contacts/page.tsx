@@ -12,8 +12,8 @@ const Contact = () => {
         <div>
           <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
           <p className="mb-6">
-            We'd love to hear from you. Fill out the form or reach out through
-            the details below.
+            We&apos; love to hear from you. Fill out the form or reach out
+            through the details below.
           </p>
 
           <div className="space-y-4 flex flex-col items-center text-center md:items-start md:text-left">
