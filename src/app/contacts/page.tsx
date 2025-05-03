@@ -12,7 +12,7 @@ const Contact = () => {
         <div>
           <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
           <p className="mb-6">
-            We&apos; love to hear from you. Fill out the form or reach out
+            We Would love to hear from you. Fill out the form or reach out
             through the details below.
           </p>
 
