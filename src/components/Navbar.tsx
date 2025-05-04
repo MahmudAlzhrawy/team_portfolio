@@ -10,19 +10,25 @@ export default function Navbar() {
     { href: "/about", label: "About" },
     { href: "/services", label: "Services" },
     { href: "/projects", label: "Projects" },
-    { href: "/contact", label: "Contact" },
+    { href: "/contacts", label: "Contact" },
     { href: "/opinions", label: "Opinions" },
   ];
 
   return (
     <div className="nav h-16 bg-cream/70 shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="content px-4 h-full flex items-center justify-between">
-
         {/* Logo */}
-        <Link href="/" className="logo text-[#654321] text-2xl md:text-3xl font-alexandria flex items-center">
-          <span className="font-serif text-4xl text-[#7B5E57] inline-block animate-flipY">C</span>
+        <Link
+          href="/"
+          className="logo text-[#654321] text-2xl md:text-3xl font-alexandria flex items-center"
+        >
+          <span className="font-serif text-4xl text-[#7B5E57] inline-block animate-flipY">
+            C
+          </span>
           ode
-          <span className="font-serif text-4xl text-[#7B5E57] inline-block animate-flipX">V</span>
+          <span className="font-serif text-4xl text-[#7B5E57] inline-block animate-flipX">
+            V
+          </span>
           erse
         </Link>
 
