@@ -4,7 +4,7 @@ import { IoCall } from "react-icons/io5";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import ContactForm from "@/components/ContactForm";
 
-const Contact = () => {
+const Contacts = () => {
   return (
     <div className="min-h-screen bg-cream/70 pt-20 text-[#7B5E57] text-center md:text-left">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 grid md:grid-cols-2 gap-12 items-start">
@@ -55,4 +55,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contacts;

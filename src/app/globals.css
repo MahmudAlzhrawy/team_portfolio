@@ -43,3 +43,24 @@ a {
     color-scheme: dark;
   }
 }
+
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(255 248 231 / 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7B5E57;
+  border-radius: 8px;
+  border: 0px solid #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4E2C20;
+}
