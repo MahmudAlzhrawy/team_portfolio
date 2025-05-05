@@ -1,43 +1,75 @@
 import React from "react";
-import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaXTwitter,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 
 function Social() {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 place-items-center mb-8">
-      <a
-        href="mailto:example@email.com"
-        title="Send us an email"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <MdEmail className="text-3xl text-[#EA4335]" />
-      </a>
+    <div className="flex flex-wrap gap-2 mt-4 text-xl text-gray-400">
       <a
         href="https://facebook.com"
-        title="Visit our Facebook page"
         target="_blank"
         rel="noopener noreferrer"
+        title="Facebook"
+        className="hover:text-[#1877F2] transition"
       >
-        <FaFacebookF className="text-3xl text-[#1877F2]" />
+        <FaFacebookF />
+      </a>
+      <a
+        href="https://instagram.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Instagram"
+        className="hover:text-[#E1306C] transition"
+      >
+        <FaInstagram />
+      </a>
+      <a
+        href="https://twitter.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Twitter"
+        className="hover:text-[#1DA1F2] transition"
+      >
+        <FaXTwitter />
+      </a>
+      <a
+        href="https://github.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="GitHub"
+        className="hover:text-white transition"
+      >
+        <FaGithub />
       </a>
       <a
         href="https://linkedin.com"
-        title="Visit our LinkedIn profile"
         target="_blank"
         rel="noopener noreferrer"
+        title="LinkedIn"
+        className="hover:text-[#0A66C2] transition"
       >
-        <FaLinkedinIn className="text-3xl text-[#0A66C2]" />
+        <FaLinkedin />
       </a>
       <a
-        href="tel:+1234567890"
+        href="tel:+201149564002"
         title="Call us"
-        target="_blank"
-        rel="noopener noreferrer"
+        className="hover:text-[#34A853] transition"
       >
-        <IoCall className="text-3xl text-[#34A853]" />
+        <IoCall />
+      </a>
+      <a
+        href="mailto:ceoscodeverse@gmail.com"
+        title="Send us an email"
+        className="hover:text-[#EA4335] transition"
+      >
+        <MdEmail />
       </a>
     </div>
   );

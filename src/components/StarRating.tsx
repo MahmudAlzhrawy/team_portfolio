@@ -14,7 +14,7 @@ const StarRating = ({
         <Star
           key={star}
           className={`w-8 h-8 cursor-pointer transition ${
-            star <= value ? "text-yellow-400 fill-yellow-400" : "text-gray-400"
+            star <= value ? "text-yellow-200 fill-yellow-200" : "text-gray-400"
           }`}
           onClick={() => onChange(star)}
         />

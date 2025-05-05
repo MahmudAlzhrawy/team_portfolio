@@ -12,15 +12,20 @@ module.exports = {
         alexandria: ['var(--font-alexandria)'],
       },
       colors: {
-        cream: '#FFF8E7',
-        beige: '#F5EBDD',
-        chestnut: {
-          light: '#7B5E57',
-          DEFAULT: '#654321',
-          dark: '#5D3A2E',
-          warm: '#8B4C39',
-          mahogany: '#4E2C20',
-          rosewood: '#A0522D',
+        primary: {
+          light: '#4FC3F7',
+          DEFAULT: '#1976D2',
+          dark: '#0D47A1',
+        },
+        secondary: {
+          light: '#E3F2FD',
+          DEFAULT: '#BBDEFB',
+          dark: '#90CAF9',
+        },
+        gray: {
+          light: '#B0BEC5',
+          DEFAULT: '#607D8B',
+          dark: '#455A64',
         },
       },
       keyframes: {
