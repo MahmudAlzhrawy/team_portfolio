@@ -3,7 +3,6 @@
 import ProjectCard from "@/components/ProjectCard";
 import { Suspense } from "react";
 import Loading from "../loading";
-
 const projects = [
   {
     id: 1,

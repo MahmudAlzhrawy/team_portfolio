@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+    
+export const metadata:Metadata = {
+    title: "About",
+    description: "About bage",
+    };
     export default function About() {
         return (
         <div className="about min-h-screen bg-gradient-to-br from-white to-secondary-light pt-20">

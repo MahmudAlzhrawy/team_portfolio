@@ -1,6 +1,13 @@
 import React from "react";
 import ContactForm from "@/components/ContactForm";
 import Social from "@/components/social"; // ✅ استيراد كومبوننت السوشيال
+import { Metadata } from "next";
+
+    
+export const metadata:Metadata = {
+    title: "Contact",
+    description: "Contact bage",
+    };
 
 const Contacts = () => {
   return (

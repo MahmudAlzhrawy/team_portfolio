@@ -3,6 +3,7 @@ import ReviewForm from "@/components/OpinionForm";
 import Blog from "@/components/Blog";
 import { useState } from "react";
 
+
 export default function Opinion() {
     const [addReview, setAc] = useState<boolean>(false);
     const [reload, setReload] = useState<number>(0);

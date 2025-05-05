@@ -3,7 +3,6 @@
 import React, { Suspense } from 'react';
 import { motion } from 'framer-motion';
 import Loading from '../loading';
-
 const services = [
   {
     title: 'Web Development',
