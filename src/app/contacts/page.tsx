@@ -16,7 +16,7 @@ const Contacts = () => {
             through the details below.
           </p>
 
-          <div className="space-y-4 flex flex-col items-center text-center md:items-start md:text-left">
+          <div className="space-y-4 flex flex-col items-center justify-center text-center md:items-start md:justify-start md:text-left">
             <div className="flex flex-col items-center gap-1 md:flex-row md:items-center md:gap-3">
               <MdEmail className="text-[#EA4335] text-2xl" />
               <a href="mailto:example@email.com" className="hover:underline">
