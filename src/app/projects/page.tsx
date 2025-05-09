@@ -1,9 +1,8 @@
 "use client";
 
-import ProjectCard from "@/components/ProjectCard"
+import ProjectCard from "@/components/ProjectCard";
 import { Suspense } from "react";
 import Loading from "../loading";
-
 const projects = [
   {
     id: 1,
@@ -34,17 +33,17 @@ const projects = [
 export default function Projects() {
   return (
     <Suspense fallback={<Loading />}>
-      <div className="min-h-screen bg-cream/70 py-24">
+      <div className="min-h-screen bg-gray-100 py-24"> {/* Changed bg-cream to bg-gray-100 for a lighter background */}
         <div className="container w-[90%] mx-auto text-center">
-          <h1 className="text-chestnut-dark text-5xl md:text-6xl font-alexandria font-bold mb-6 animate-fadeInUp">
+          <h1 className="text-primary-DEFAULT text-5xl md:text-6xl font-alexandria font-bold mb-6 animate-fadeInUp">
             Projects CodeVerse
           </h1>
-          <p className="text-center text-[#4E2C20] max-w-2xl mx-auto mb-12 font-serif">
+          <p className="text-secondary-DEFAULT text-[#607D8B] max-w-2xl mx-auto mb-12 font-serif">
             Explore our innovative projects built with the latest technologies and modern frameworks.
           </p>
 
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project,index) => (
+            {projects.map((project, index) => (
               <ProjectCard
                 key={project.id}
                 {...project}

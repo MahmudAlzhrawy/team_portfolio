@@ -40,15 +40,15 @@ export default function ProjectCard({
         />
       </div>
       <div className="p-6 flex flex-col flex-grow">
-        <h2 className="text-2xl font-bold mb-2 text-[#7B5E57]">{title}</h2>
-        <p className="text-[#4E2C20] mb-4 flex-grow">{description}</p>
+        <h2 className="text-primary-DEFAULT text-2xl font-bold mb-2">{title}</h2>
+        <p className="text-gray-DEFAULT mb-4 flex-grow">{description}</p>
         <div className="mb-4">
-          <h3 className="text-[#7B5E57] font-semibold mb-2">Technologies:</h3>
+          <h3 className="text-primary-DEFAULT font-semibold mb-2">Technologies:</h3>
           <ul className="flex flex-wrap gap-2">
             {technologies.map((tech, index) => (
               <li
                 key={index}
-                className="bg-cream/60 text-[#4E2C20] px-3 py-1 rounded-full text-sm"
+                className="bg-primary-light/60 text-primary-DEFAULT px-3 py-1 rounded-full text-sm"
               >
                 {tech}
               </li>
@@ -58,7 +58,7 @@ export default function ProjectCard({
         <Link
           href={demoLink}
           target="_blank"
-          className="mt-auto inline-block bg-[#7B5E57] hover:bg-[#4E2C20] text-white text-center py-2 px-4 rounded-lg transition duration-300"
+          className="mt-auto inline-block bg-primary-DEFAULT hover:bg-primary-dark text-white text-center py-2 px-4 rounded-lg transition duration-300"
         >
           View Demo
         </Link>

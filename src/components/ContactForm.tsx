@@ -76,14 +76,14 @@ const ContactForm = () => {
       >
         {/* Name Field */}
         <div className="w-full">
-          <label htmlFor="name" className="block mb-1 font-medium">
+          <label htmlFor="name" className="block mb-1 font-medium text-primary">
             Name
           </label>
           <input
             type="text"
             id="name"
             placeholder="Your name"
-            className="w-full p-3 border border-gray-300 dark:border-gray-700 rounded-md bg-transparent text-[#7B5E57] placeholder-[#7B5E57]"
+            className="w-full p-3 border border-gray-300 dark:border-gray-700 rounded-md bg-transparent text-primary placeholder-[#7B5E57]"
             {...formik.getFieldProps("name")}
           />
           {formik.touched.name && formik.errors.name && (
@@ -95,14 +95,14 @@ const ContactForm = () => {
 
         {/* Email Field */}
         <div className="w-full">
-          <label htmlFor="email" className="block mb-1 font-medium">
+          <label htmlFor="email" className="block mb-1 font-medium text-primary">
             Email
           </label>
           <input
             type="email"
             id="email"
             placeholder="you@example.com"
-            className="w-full p-3 border border-gray-300 dark:border-gray-700 rounded-md bg-transparent text-[#7B5E57] placeholder-[#7B5E57]"
+            className="w-full p-3 border border-gray-300 dark:border-gray-700 rounded-md bg-transparent text-primary placeholder-[#7B5E57]"
             {...formik.getFieldProps("email")}
           />
           {formik.touched.email && formik.errors.email && (
@@ -114,14 +114,14 @@ const ContactForm = () => {
 
         {/* Message Field */}
         <div className="w-full">
-          <label htmlFor="message" className="block mb-1 font-medium">
+          <label htmlFor="message" className="block mb-1 font-medium text-primary">
             Message
           </label>
           <textarea
             id="message"
             rows={5}
             placeholder="Your message..."
-            className="w-full p-3 border border-gray-300 dark:border-gray-700 rounded-md bg-transparent text-[#7B5E57] placeholder-[#7B5E57]"
+            className="w-full p-3 border border-gray-300 dark:border-gray-700 rounded-md bg-transparent text-primary placeholder-[#7B5E57]"
             {...formik.getFieldProps("message")}
           />
           {formik.touched.message && formik.errors.message && (
@@ -133,7 +133,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="w-full bg-[#0A66C2] text-white py-3 rounded-md hover:bg-blue-700 transition"
+          className="w-full bg-primary text-white py-3 rounded-md hover:bg-primary-dark transition"
         >
           Send Message
         </button>
