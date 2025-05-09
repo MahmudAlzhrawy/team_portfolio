@@ -1,6 +1,6 @@
 import  mongoose from "mongoose";
 
-const uri ="mongodb+srv://clinic:Mon808080@clinic.f4i24.mongodb.net/portfolio?retryWrites=true&w=majority&appName=clinic";
+const uri = process.env.DATABASE_URI
 if(!uri){
     throw new Error ("Connection string not specified")
 }

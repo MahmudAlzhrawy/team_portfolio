@@ -1,13 +1,7 @@
-import { Metadata } from "next";
-
-    
-export const metadata:Metadata = {
-    title: "About",
-    description: "About bage",
-    };
+'use client'
     export default function About() {
         return (
-        <div className="about min-h-screen bg-gradient-to-br from-white to-secondary-light pt-20">
+        <div className="about min-h-screen bg-gradient-to-br from-white to-secondary-light pt-20 mb-10">
             <div className="container w-[90%] mx-auto text-center">
             <h1 className="text-primary-dark text-5xl md:text-6xl font-alexandria font-bold mb-6 animate-fadeInUp">
                 About Codeverse
@@ -40,7 +34,7 @@ export const metadata:Metadata = {
                 </div>
             </div>
     
-            <button className="mt-14 px-6 py-4 w-full sm:w-1/2 rounded-2xl text-xl font-mono bg-primary-dark text-white hover:bg-primary transition duration-500 animate-pulseSlow">
+            <button onClick={()=>{window.location.href='/projects'}} className="mt-14 px-6 py-4 w-full sm:w-1/2 rounded-2xl text-xl font-mono bg-primary-dark text-white hover:bg-primary transition duration-500 animate-pulseSlow">
                 Get in Touch
             </button>
             </div>

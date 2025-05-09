@@ -82,7 +82,6 @@
                     </div>
                 </div>
                 <p className="text-gray-DEFAULT">{data.opinion}</p>
-                <p className="text-sm text-gray-dark italic mt-1">{data.createdAt}</p>
                 </div>
             ))}
             </div>

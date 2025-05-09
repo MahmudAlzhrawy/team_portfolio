@@ -1,3 +1,4 @@
+"use client"
 export default function Home() {
   return (
     <div className="home min-h-screen bg-gradient-to-br from-white to-secondary-light relative">
@@ -9,7 +10,7 @@ export default function Home() {
           <p className="text-primary DEFAULT mt-4 text-lg md:text-xl max-w-2xl mx-auto animate-fadeInUp delay-200">
             At Codeverse, we excel in designing and developing websites and mobile applications with high quality and unique user experiences.
           </p>
-          <button className="mt-10 px-6 py-4 w-full sm:w-1/2 rounded-2xl text-xl font-mono bg-primary-dark text-white hover:bg-primary DEFAULT transition duration-500 animate-pulseSlow">
+          <button onClick={()=>{window.location.href='/contacts'}} className="mt-10 px-6 py-4 w-full sm:w-1/2 rounded-2xl text-xl font-mono bg-primary-dark text-white hover:bg-primary DEFAULT transition duration-500 animate-pulseSlow">
             Book your Consultation
           </button>
         </section>
