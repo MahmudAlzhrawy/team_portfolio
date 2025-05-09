@@ -20,7 +20,11 @@ export default function Navbar() {
         {/* Logo */}
         <div className="logo flex items-center gap-2">
           <div className="img h-10 w-10 rounded-full overflow-hidden">
-            <img src="/images/Logo.jpg" alt="Logo" className="h-full w-full object-cover" />
+            <img
+              src="/images/Logo.jpg"
+              alt="Logo"
+              className="h-full w-full object-cover"
+            />
           </div>
           <Link
             href="/"

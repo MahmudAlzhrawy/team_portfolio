@@ -23,7 +23,7 @@ const Contacts = () => {
           </p>
 
           <div className="space-y-6">
-            <div className="mt-6">
+            <div className="mt-6 flex items-center justify-center md:justify-start">
               <Social /> {/* ✅ تم استدعاء الكومبوننت هنا */}
             </div>
           </div>
