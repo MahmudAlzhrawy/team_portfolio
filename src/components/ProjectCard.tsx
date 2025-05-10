@@ -28,7 +28,7 @@ export default function ProjectCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index! * 0.2 + 0.5 }}
-      className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col"
+      className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-[600px]" // <-- added fixed height
     >
       <div className="relative h-48 w-full">
         <Image
@@ -40,25 +40,30 @@ export default function ProjectCard({
         />
       </div>
       <div className="p-6 flex flex-col flex-grow">
-        <h2 className="text-primary-DEFAULT text-2xl font-bold mb-2">{title}</h2>
-        <p className="text-gray-DEFAULT mb-4 flex-grow">{description}</p>
-        <div className="mb-4">
-          <h3 className="text-primary-DEFAULT font-semibold mb-2">Technologies:</h3>
-          <ul className="flex flex-wrap gap-2">
+        <h2 className="text-primary-dark text-2xl font-bold mb-2">{title}</h2>
+        
+        <p className="text-gray-dark mb-4 ">
+          {description}
+        </p>
+
+        <div className="my-8">
+          <h3 className="text-gray-dark font-semibold mb-4">Technologies:</h3>
+          <ul className="flex items-center justify-center flex-wrap gap-2">
             {technologies.map((tech, index) => (
               <li
                 key={index}
-                className="bg-primary-light/60 text-primary-DEFAULT px-3 py-1 rounded-full text-sm"
+                className="bg-primary-dark text-primary-DEFAULT px-3 py-1 rounded-full text-sm"
               >
                 {tech}
               </li>
             ))}
           </ul>
         </div>
+
         <Link
           href={demoLink}
           target="_blank"
-          className="mt-auto inline-block bg-primary-DEFAULT hover:bg-primary-dark text-white text-center py-2 px-4 rounded-lg transition duration-300"
+          className="mt-auto inline-block bg-primary-DEFAULT bg-primary-dark text-white text-center py-2 px-4 rounded-lg transition duration-300"
         >
           View Demo
         </Link>
